@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Image</title>
+    <style>
+        body{
+            margin:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#111;
+        }
+
+        img{
+            width:350px;
+            border-radius:15px;
+            box-shadow:0 0 20px purple;
+        }
+    </style>
+</head>
+<body>
+
+<img src="https://i.ibb.co/Y4RRXLnK/file-00000000ae94720891d10aa92a360e82.png" alt="Birthday Image">
+
+</body>
+</html>
