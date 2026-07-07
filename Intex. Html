@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sis</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111;
+    font-family:Arial, sans-serif;
+}
+
+.card{
+    width:360px;
+    background:#222;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 20px purple;
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+}
+
+h2{
+    color:#d291ff;
+}
+
+p{
+    color:#fff;
+}
+
+button{
+    padding:10px 20px;
+    background:#9c27b0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="https://i.ibb.co/Y4RRXLnK/file-00000000ae94720891d10aa92a360e82.png" alt="Birthday">
+
+<h2>💜 Happy Birthday Sis 💜</h2>
+
+<p>Akka Thambi Relation<br>Comes From Heart, Not From Blood</p>
+
+<audio id="music" autoplay loop>
+    <source src="https://files.catbox.moe/ip9ao1.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()">▶ Play Music</button>
+
+</div>
+
+<script>
+const music = document.getElementById("music");
+
+window.onload = function () {
+    music.play().catch(() => {
+        console.log("Autoplay blocked by browser.");
+    });
+};
+
+function playMusic() {
+    music.play();
+}
+
+document.body.addEventListener("click", function () {
+    music.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
